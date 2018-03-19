@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package aula04;
 
 import java.util.Scanner;
@@ -17,9 +13,24 @@ public class Aula04 {
         int i;
         float x;
         
+        Cliente cliente1 =new Cliente();
+        cliente1.numeroConta = "12345";
+        cliente1.nome = "Henrique";
+        cliente1.sobrenome = "Poladian";
+        cliente1.cpf = "47018295874";
         
         Conta c1 = new Conta();
+        c1.numero = Integer.parseInt(cliente1.numeroConta);
+        //declara titular
+        
+        
+        
+        
+        
+        
         Conta c2 = new Conta();
+        
+        
         
         //recebe valor de c1
         System.out.println("c1 - R$: ");
