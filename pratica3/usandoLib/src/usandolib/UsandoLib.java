@@ -115,6 +115,8 @@ public class UsandoLib {
                     System.out.println("Idade: ");
                     System.out.println(cl1.getIdade());  
                     
+                    System.out.println("Digite a opção:  ");
+                    i = scanner.nextInt();            
                     break;
                     
                 default:
