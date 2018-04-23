@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package concessionaria;
 
-/**
- *
- * @author 16.00026-9
- */
 public class Funcionario {
     
-}
+    private String nome;
+    protected static double bonusExtra;
+    protected double salarioBase;
+    
+    public Funcionario(double salarioBase, String nome){
+        
+        this.nome = nome;
+        this.salarioBase = salarioBase;
+        
+    }
+    
+    public static void calcularBonusExtra(double vendasTotais, double nFuncionarios){
+        
+        Funcionario.bonusExtra = (vendasTotais * 0.05)/nFuncionarios;           
+        
+    }
+    
+   
+} 
+    
+    
