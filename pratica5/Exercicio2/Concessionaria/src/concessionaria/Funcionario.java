@@ -21,9 +21,8 @@ public class Funcionario {
     }
    
     public double getBonusExtra(){
-        return this.bonusExtra;
-    }
-    
+        return Funcionario.bonusExtra;
+    }  
    
 } 
     

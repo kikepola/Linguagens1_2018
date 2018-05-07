@@ -10,7 +10,7 @@ public class Concessionaria {
         int salBase = 3000;
         
         Funcionario f1 = new Funcionario(salBase, "Nome1");
-        f1.calcularBonusExtra(100000, 5);
+        Funcionario.calcularBonusExtra(100000, 5);
         System.out.println("Valor do bonus extra: ");
         System.out.println(f1.getBonusExtra());
     
