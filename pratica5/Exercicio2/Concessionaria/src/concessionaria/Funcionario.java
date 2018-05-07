@@ -19,6 +19,10 @@ public class Funcionario {
         Funcionario.bonusExtra = (vendasTotais * 0.05)/nFuncionarios;           
         
     }
+   
+    public double getBonusExtra(){
+        return this.bonusExtra;
+    }
     
    
 } 

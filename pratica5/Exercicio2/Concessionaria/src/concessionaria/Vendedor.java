@@ -11,7 +11,7 @@ public class Vendedor extends Funcionario {
         super(salarioBase, nome);
     }
     
-    public void ralizarVedas(int valorVendas){
+    public void realizarVedas(int valorVendas){
         this.valorVendas = this.valorVendas + valorVendas;
     }
     
