@@ -34,9 +34,51 @@ public class ListaDeContatos {
         }
     }
     
+    public void deleteContato(String nome){
+       Iterator<Contato> i = listacontatos.iterator();
+        Contato c;
+        int count = 0;
+        while (i.hasNext()) {
+            c = i.next();
+            if(c.getNome().equals(nome)){
+                listacontatos.remove(count);
+            }
+            count = count + 1;
+        }
+    }
     
+    public void selecByName(String nome){
+        Iterator<Contato> i = listacontatos.iterator();
+        Contato c;
+        while (i.hasNext()) {
+            c = i.next();
+            if(c.getNome().equals(nome)){
+                System.out.println(c.getNome());
+                System.out.println(c.getEmail());
+                System.out.println(c.getTel());
+            }
+        }
+    }
     
-    
-    
+    public int getIndex(String nome){
+        Iterator<Contato> i = listacontatos.iterator();
+        Contato c;
+        int q = 0;
+        while (i.hasNext()) {
+            c = i.next();
+            if(c.getNome().equals(nome)){
+                q = listacontatos.indexOf(c);
+            }
+        }
+        return q;
+    }
     
 }
+
+    
+    
+    
+    
+    
+    
+

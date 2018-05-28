@@ -3,9 +3,9 @@ package contatos;
 
 
 public class Contato {
-    private String nome;
-    private String telefone;
-    private String email;
+    private final String nome;
+    private final String telefone;
+    private final String email;
     
     public Contato(String nome, String telefone, String email){
         this.nome = nome;
