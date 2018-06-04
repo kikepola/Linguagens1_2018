@@ -57,6 +57,9 @@ public class Contatos {
                      System.out.println("Digite uma opção: ");
                      entrada = sc.nextInt();
                      break;
+                case 5:
+                    System.out.println(l1.getTotalContatos());
+                    break;
                  default:
                      System.out.println("FIM!");
                      entrada = 0;

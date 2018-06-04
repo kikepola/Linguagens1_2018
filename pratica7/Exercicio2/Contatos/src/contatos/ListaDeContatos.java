@@ -72,6 +72,11 @@ public class ListaDeContatos {
         }
         return q;
     }
+
+    public getTotalContatos(){
+        Contato c;
+        return c.getTotalContatos();
+    }
     
 }
 
