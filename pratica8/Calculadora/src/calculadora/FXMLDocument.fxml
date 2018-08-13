@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="calculadora.FXMLDocumentController">
+    <children>
+      <TextField id="varX" fx:id="varX" layoutX="76.0" layoutY="66.0" promptText="X" />
+      <TextField id="varY" fx:id="varY" layoutX="76.0" layoutY="123.0" promptText="Y" />
+      <Button id="soma" layoutX="76.0" layoutY="215.0" mnemonicParsing="false" onAction="#somar" text="+" />
+      <Button id="sub" layoutX="173.0" layoutY="215.0" mnemonicParsing="false" onAction="#subtrair" text="-" />
+      <Button id="div" layoutX="76.0" layoutY="287.0" mnemonicParsing="false" onAction="#dividir" text="/" />
+      <Button id="mult" layoutX="173.0" layoutY="287.0" mnemonicParsing="false" onAction="#multiplicar" text="X" />
+      <Label id="label" fx:id="label" layoutX="136.0" layoutY="387.0" />
+    </children>
+</AnchorPane>
