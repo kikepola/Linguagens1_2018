@@ -42,6 +42,8 @@ public class EstudoErros {
         }
         catch(Exception e){
             System.out.println("Deu Ruim 2");
+            System.out.println(e.toString());
+            throw (e);
         }
         System.out.println("Fim do Metodo 2");
     }
