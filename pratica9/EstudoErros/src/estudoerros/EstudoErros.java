@@ -22,16 +22,26 @@ public class EstudoErros {
 
     static void metodo1() {
         System.out.println("Chamada Metodo 1:");
-        metodo2();
+        try{
+            metodo2();
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Deu ruim");
+        }
         System.out.println("Fim do Metodo 1");
     }
 
     private static void metodo2() {
         System.out.println("Chamada na Metodo 2:");
         int [] array = new int[10];
-        for(int i = 0; i < 15; i++){
-            array[i] = i;
-            System.out.println(""+ i);
+        try{
+            for(int i = 0; i < 15; i++){
+                array[i] = i;
+                System.out.println(""+ i);
+            }
+        }
+        catch(Exception e){
+            System.out.println("Deu Ruim 2");
         }
         System.out.println("Fim do Metodo 2");
     }
