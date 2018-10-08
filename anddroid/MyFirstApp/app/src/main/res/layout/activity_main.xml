@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Teste"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/imgNome"
+        android:rotation="0"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/teste"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu nome"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acionar"
+        android:layout_centerInParent="true"
+        android:onClick="apertar"
+        />
+
+
+
+
+</LinearLayout>
